@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+
+WriteLine("Введите число: ");
+
+int a = int.Parse(ReadLine()!);
+//int b = Convert.ToInt32(Read.Line());
+WriteLine($"Квадарат числа {a} равен {a*a}");
