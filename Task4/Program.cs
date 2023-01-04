@@ -1,5 +1,5 @@
 ﻿using static System.Console;
-
+Clear();
 WriteLine("Введите трехзначное число: ");
 int a = int.Parse(ReadLine()!);
 
