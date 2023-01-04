@@ -1,5 +1,5 @@
 ﻿using static System.Console;
-
+Clear();
 WriteLine("Какое число бальше а какое меньше");
 
 Write("Введите число a: ");
