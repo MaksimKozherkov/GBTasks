@@ -2,7 +2,13 @@
 Clear();
 
 Write("Введите номер четверти:");
-int i=int.Parse(ReadLine()!);
+bool isParse = int.TryParse(ReadLine(),out int i);//TryParse проверяет введенный текст на возможность преобразовать его в нужную переменную
+if(!isParse)
+{
+    WriteLine("Введено не число");
+    return;
+}
+// int i=int.Parse(ReadLine()!);
 
 switch (i)
 {
@@ -28,7 +34,7 @@ switch (i)
         }
         default:
         {
-            WriteLine("Ошибка");
+            WriteLine("Такой четверти не существует");
             break;
         }
 }
