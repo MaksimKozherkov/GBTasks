@@ -12,8 +12,12 @@ bool isParse3 = int.TryParse(ReadLine(),out int bx);
 WriteLine("Введите y");
 bool isParse4 = int.TryParse(ReadLine(),out int by);
 
-
-WriteLine(!isParse1 || !isParse2 || !isParse3 || !isParse4?"Не все координаты заданы числами!":$"a({ax},{ay});b({bx},{by})");
+if(!isParse1 || !isParse2 || !isParse3 || !isParse4)
+{
+    WriteLine("Не все координаты заданы числами!");
+    return;
+}
+WriteLine($"a({ax},{ay});b({bx},{by})");
 
 // WriteLine($"Длина отрезка ab равна: {Math.Sqrt((ax-bx)*(ax-bx) + (ay-by)*(ay-by))}");Math.Sqrt - вычисление корня числа или выражения
 // WriteLine($"Длина отрезка ab равна: {Math.Sqrt(Math.Pow((ax-bx),2) + Math.Pow((ay-by),2))}");Math.Pow возведение в указанную степень
