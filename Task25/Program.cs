@@ -2,29 +2,24 @@
 
 Clear();
 
-int[] array = InitBinaryArray();
-PrintArray(array);
+int[] array = InitArray();
 
 
-int[] InitBinaryArray()
+
+int[] InitArray()
 {
     int[] res=new int[8];
     for (int i = 0; i < res.Length; i++)
     {
         Random  ran = new Random();
-        res[i] = ran.Next(2);
+        res[i] = ran.Next(100);
+        Write("{0} ", res[i]);
+        
     }
     return res;
+    
+    
 }
 
 
 
-void PrintArray(int[] arr)
-{
-    int count = arr.Length;
-    for (int i = 0; i < count; i++)
-    {
-        Write($"{arr[i]} ");    
-    }
-    WriteLine();
-}
