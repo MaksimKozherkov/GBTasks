@@ -7,8 +7,8 @@ int.TryParse(ReadLine(),out int number);
 int[] array = { -1, -2, 0, 2, 1, 3, 4 };
 
 
-bool result = ArrayLookUp(array,number);
-WriteLine(result);
+//bool result = ArrayLookUp(array,number);
+WriteLine(ArrayLookUp(array,number)?"да":"нет");
 
 
 
