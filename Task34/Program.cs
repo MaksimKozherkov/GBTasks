@@ -4,6 +4,7 @@ Clear();
 
 int ticket = AskUser("Введите номер билета: ");
 WriteLine(LuckyTicket(ticket) ? $"\nБилет с номером {ticket} счастливый." : $"Билет с номером {ticket} не счастливый.\n");
+// LuckyTicket(ticket);
 
 bool LuckyTicket(int inNum)
 {
@@ -19,13 +20,14 @@ bool LuckyTicket(int inNum)
     return (a + b + c == d + e + f); //вместо if формула вернет true или false
 }
 
-
-
-
-
-
-
-
+// bool LuckyTicket(string inString)
+// {
+//     foreach (var item in inString)
+//     {
+//         WriteLine(Convert.ToInt32(item));
+//     }
+//     return false;
+// }
 
 int AskUser(string inAsk)//задает пользователю вопрос и считывает числовой ответ
 {
