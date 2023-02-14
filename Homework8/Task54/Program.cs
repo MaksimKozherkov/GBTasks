@@ -40,7 +40,7 @@ void PrintMatrixArray(int[,] inArray)
 
 void srArr(int[,] srArray)
 {
-    for (int c = 0; c <= srArray.GetLength(0)+1; c++)
+    for (int c = 0; c <= (srArray.GetLength(0)*srArray.GetLength(1)); c++)
     {    
         for (int i = 0; i < srArray.GetLength(0); i++)
         {
